@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CAPTCHA</title>
+  </head>
+  <body>
+    <form action="/verify" method="post">
+      <img src="data:image/png;base64,{{ captcha_image }}" alt="CAPTCHA Image">
+      <input type="text" name="captcha" required>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
